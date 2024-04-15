@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+      Scanner ac = new Scanner(System.in);
+      System.out.println("For a^n");
+      System.out.println("Enter Value of a : ");
+      int a  = ac.nextInt();
+      System.out.println("Enter Value of n : ");
+      int  n = ac.nextInt();
+      int i =1; 
+      int ans =1;
+      while(i<=n){
+          ans = ans*a;
+          i++ ;
+            }
+      System.out.println(ans);
+     }
+  
+}
