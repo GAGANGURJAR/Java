@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+      Scanner ac = new Scanner(System.in);
+     int i =1;
+     System.out.println("enter number");
+  int   n= ac.nextInt();
+     int sum ;
+     while(i<=n){
+         sum = 3*i+2;
+         System.out.println(sum);
+         i++;
+     }
+  }
+}
