@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class practice1one {
+    public static boolean youtube(String username , int  password){
+
+        if (username.equals("gagan")&&password==1234){
+            return true ;
+
+        }
+        else {
+            return false ;
+        }
+
+
+
+
+    }
+    public static void uploadvideo ( String Vname){
+        System.out.println("'"+Vname +"'"+ " Video Upload Successfully");
+
+    }
+
+    public static void main(String[] args) {
+//        or String name  = "gagan ";
+//        String password =  "1234" ;
+//
+        Scanner ac = new Scanner(System.in);
+        System.out.println("Enter Username ");
+        String username1 = ac.nextLine();
+        System.out.println("Enter Password ");
+        int password1  = ac.nextInt();
+
+        youtube(username1,password1);
+        boolean a =  youtube(username1,password1);
+        System.out.println(a);
+        if (a==true){
+
+
+            uploadvideo("how to code");
+        }
+        else {
+            System.out.println("Wrong Username and Password  ! Please Check it again ");
+        }
+
+    }
+}
