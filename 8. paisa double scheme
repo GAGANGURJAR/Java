@@ -1,0 +1,14 @@
+public class Functions {
+    public static void gagan(int a ){
+        a =a *2;
+        System.out.println("double money " + a);
+
+
+     
+    }
+    public static void main(String[] args) {
+        int n = 10;
+     gagan(n);
+        System.out.println("Actual money " + n);
+    }
+}
