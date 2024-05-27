@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class Alarmtest{
+    int start_time;
+    int current_time;
+    void ring(){
+        if (start_time==current_time){
+            System.out.println("Ringing..........");
+        }
+        else {
+            System.out.println("Alarm will ring at " + start_time);
+        }
+
+    }
+    void location(){
+        System.out.println("Village  == Garhi jassi");
+        System.out.println("City     == Ghaziabad");
+        System.out.println("Pin code == 201102");
+    }
+
+
+}
+public class AlarmT {
+    public static void main(String[] args) {
+        Scanner ac = new Scanner(System.in);
+
+        Alarmtest a = new Alarmtest();
+        System.out.println("Enter Start Time");
+        a.start_time = ac.nextInt();
+        System.out.println("Enter Current Time");
+        a.current_time = ac.nextInt();
+        a.ring();
+        a.location();
+
+
+    }
+}
