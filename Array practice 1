@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class raunak {
+    public static void printArray(int[] arr) {
+        for (Integer x : arr){
+            System.out.print(x + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner ac = new Scanner( System.in);
+        System.out.println("Enter Size of Array ");
+        int n = ac.nextInt();
+        int[] marks  = new int[n];
+        printArray(marks);
+        System.out.println("");
+        System.out.println("Enter Value of Array");
+        for (int i=0 ; i< marks.length;i++){
+            marks[i] = ac.nextInt();
+        }
+        System.out.println("By function");
+        printArray(marks);
+        System.out.println("");
+        System.out.println("By Manual");
+        for (Integer x : marks){
+            System.out.print(x + " ");
+        }
+
+    }
+
+}
