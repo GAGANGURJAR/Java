@@ -1,0 +1,39 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class arraylist {
+    public static void main(String[] args) {
+       ArrayList <Integer> gagan = new ArrayList<>(100);
+        Scanner ac = new Scanner(System.in);
+        System.out.println("Enter Size");
+        int n = ac.nextInt();
+        System.out.println("");
+        gagan.ensureCapacity(n);
+
+        for (int i =0 ; i<n;i++){
+           int add = i*2;
+            gagan.add(add);
+        }
+        for (Integer x : gagan){
+            System.out.println(x);
+        }
+//        gagan.add(0,20);
+
+
+//        gagan.add(21);
+//        gagan.add(2,22);
+//
+////       // for each loop
+////        for (Integer x : gagan){
+////            System.out.println(x);
+////        }
+////        System.out.println("__________________");
+////        for (int i = 0 ; i<gagan.size();i++){
+////            System.out.println(gagan.get(i));
+//        }
+
+
+    }
+}
