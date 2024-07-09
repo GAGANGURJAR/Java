@@ -1,0 +1,48 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class arraylist {
+    public static void main(String[] args) {
+//      int[] a ={2,5,8,10,13,11};
+//      Arrays.sort(a);
+//      int sum = 15;
+//        System.out.println(Arrays.toString(a));
+//        System.out.println(a.length);
+//        for (int i = 0 ; i <a.length;i++){
+//            for (int j = i+1;j< a.length;j++){
+//                if (a[i] + a[j]==sum){
+//                    System.out.println(a[i] + " "+a[j]);
+//                }
+//            }
+//        }
+       int[] a = {2,8,5,10,13,11,15,7};
+        System.out.println("before sort");
+        System.out.println(Arrays.toString(a));
+       Arrays.sort(a);
+        System.out.println("After Sort");
+        System.out.println(Arrays.toString(a));
+        System.out.println("[0, 1, 2, 3, 4,  5,  6,  7]");
+        System.out.println("Array length "+a.length);
+        int i = 0 ;
+        int j = a.length-1;
+        while(i<j){
+            if (a[i] + a[j] ==15){
+                System.out.println(a[i] +" " + a[j]);
+                i++;
+                j--;
+            }
+            else if (a[i] + a[j]>15) {
+                j--;
+            } else if (a[i] + a[j] <15) {
+                i++;
+
+            }
+
+        }
+
+
+
+    }
+}
