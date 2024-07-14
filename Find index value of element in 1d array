@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+public class chapter1 {
+    public static void main(String[] args) {
+        Scanner ac= new Scanner(System.in);
+        int [] a = {1,2,3,4,3};
+        System.out.println("Enter Element you want to find index value");
+        int num = ac.nextInt();
+        for (int i = 0; i < a.length; i++){
+            if (a[i]==num){
+                System.out.println("Index Value " + i);
+
+            }
+        }
+
+
+    }
+    }
